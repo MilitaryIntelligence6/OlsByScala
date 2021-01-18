@@ -1,10 +1,10 @@
 @relation artcData08
 
 @attribute y numeric
-@attribute techPres numeric
-@attribute highEduc numeric
-@attribute gradu numeric
-@attribute peopleP numeric
+@attribute techRatio numeric
+@attribute univCount numeric
+@attribute graduNum numeric
+@attribute popuDensity numeric
 
 @data
 40489.31,0.039011,92,14.92,1136

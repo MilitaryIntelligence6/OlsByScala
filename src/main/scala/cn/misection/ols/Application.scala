@@ -1,8 +1,8 @@
 package cn.misection.ols
 
-import smile.data.formula.Formula
-import smile.read
-import smile.regression.{OLS, lm}
+
+import cn.misection.ols.entity.MyOls
+
 
 /**
  * @ClassName App
@@ -15,8 +15,10 @@ object Application
 {
     def main(args: Array[String]): Unit =
     {
-        val planes = read.arff("src/main/resources/arff/artcData08.csv.arff");
-        val model = lm(Formula.lhs("y"), planes);
-        println(model);
+        val path: String = "src/main/resources/arff/olsData.arff";
+        val y: String = "y";
+
+        println(new MyOls().regress(path, y));
+        return 0;
     }
 }
